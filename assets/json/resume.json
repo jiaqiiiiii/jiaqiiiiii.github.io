@@ -5,7 +5,7 @@
     "image": "",
     "email": "jiaqi.zhu@dh.huc.knaw.nl",
     "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "",
+    "summary": "Before joining the Trifecta project as a PhD Candidate in November 2023, I received my MSc in Digital Humanities and MA in Philosophy from KU Leuven, Belgium. Growing into a DHer and computational humanist, I am passionate about using computational tools and methods to answer humanities research questions and also reflecting how computational tools and methods can change the practices of humanities research.",
     "location": {
       "address": "Oudezijds Achterburgwal 185",
       "postalCode": "1012 DK",
@@ -36,6 +36,27 @@
       "studyType": "PhD",
       "startDate": "2023-11-01",
       "endDate": "2027-11-01"
+    },
+    "education": [
+    {
+      "institution": "KU Leuven, Belgium",
+      "studyType": "Master of Digital Humanities (Master of Science)",
+      "startDate": "2022-09-27",
+      "endDate": "2023-09-10"
+    },
+    "education": [
+    {
+      "institution": "KU Leuven, Belgium",
+      "studyType": "Master of Philosophy (Master of Arts)",
+      "startDate": "2021-09-27",
+      "endDate": "2022-09-10"
+    },
+      "education": [
+    {
+      "institution": "Sichuan University, China",
+      "studyType": "Bachelor of Philosophy (Bachelor of Arts)",
+      "startDate": "2016-09-01",
+      "endDate": "2020-07-01"
     }
   ],
   "publications": [
@@ -44,8 +65,7 @@
       "publisher": "DHBenelux 2024",
       "releaseDate": "2024-06-05",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YvclMUcAAAAJ&authuser=1&citation_for_view=YvclMUcAAAAJ:u5HHmVD_uO8C",
-      "summary": "Tracing commodities and their impact on local and global history enables researchers to study the dynamics in social, cultural, and economic relations between different parts of the world. In this paper, we investigate the extent to which we can trace the importance of opium to the VOC quantitatively. Our hypothesis is that analysing the mentions of opium and other commodities in the GM and the BKB will show that the interest in opium grew disproportionately over time as compared to other commodities. By highlighting time periods and data points that deviate from general trends in the VOC trade, we can aid scholars in identifying turning points in overall VOC trade. Our research question is thus: to what extent can we identify changes in opium importance to the VOC through the GM and the BKB? 
-"
+      "summary": "Tracing commodities and their impact on local and global history enables researchers to study the dynamics in social, cultural, and economic relations between different parts of the world. In this paper, we investigate the extent to which we can trace the importance of opium to the VOC quantitatively. Our hypothesis is that analysing the mentions of opium and other commodities in the GM and the BKB will show that the interest in opium grew disproportionately over time as compared to other commodities. By highlighting time periods and data points that deviate from general trends in the VOC trade, we can aid scholars in identifying turning points in overall VOC trade. Our research question is thus: to what extent can we identify changes in opium importance to the VOC through the GM and the BKB? "
     },
     {
       "name": "Tracing Organisation Evolution in Wikidata",
@@ -53,16 +73,6 @@
       "releaseDate": "2025-09-09",
       "url": "https://trifecta.dhlab.nl/wp-content/uploads/2025/06/LDK2025_OrganisationEvolutionFromWikidata-preprint.pdf",
       "summary": "Entities change over time, and while information about entity change is contained in knowledge graphs (KGs), it is often not stated explicitly. This makes KGs less useful for investigating entities over time, or downstream tasks such as historical entity linking. In this paper,we present an approach and experiments that make explicit entity change in Wikidata. Our contributions are a mapping between an existing change ontology and Wikidata properties to identify types of change, and a dataset of entities with explicit evolution information and analytics on this dataset."
-    }
-  ],
-  "skills": [
-    {
-      "name": "",
-      "keywords": [
-        "",
-        "",
-        ""
-      ]
     }
   ],
   "languages": [
@@ -75,15 +85,25 @@
       "fluency": "Fluent"
     },
     {
-      "language": "",
-      "fluency": ""
+      "language": "Dutch",
+      "fluency": "A1"
+    },
+    {
+      "language": "French",
+      "fluency": "Reading"
+    },
+    {
+      "language": "Classical Greek",
+      "fluency": "Reading"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "name": "Physics",
-      "name": "Physics"
+      "name": "movies",
+      "name": "cooking",
+      "name": "LEGO",
+      "name": "travelling",
+      "name": "cats"
       ]
     }
   ],
@@ -94,7 +114,7 @@
       "highlights": ["", ""],
       "startDate": "2023-11-01",
       "endDate": "2028-11-01",
-      "url": ""
+      "url": "https://trifecta.dhlab.nl/"
     }
   ]
 }
