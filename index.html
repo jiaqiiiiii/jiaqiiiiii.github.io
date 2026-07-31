@@ -6,10 +6,10 @@
 <title>Jiaqi Zhu</title>
 <meta name="description" content="I am a PhD candidate at the DHLab, KNAW Humanities Cluster. I work on lexical semantic change detection and analysis.">
 
-<!-- Open Graph (edit the URL and image once the site is live) -->
 <meta property="og:title" content="Jiaqi Zhu">
 <meta property="og:description" content="PhD candidate in computational humanities.">
 <meta property="og:type" content="profile">
+<meta property="og:url" content="https://jiaqiiiiii.github.io/">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,6 @@
 <style>
 /* ============================================================
    TOKENS
-   Palette is drawn from qualitative plot colormaps — the three
-   accents read as cluster labels, which is the subject matter.
    ============================================================ */
 :root{
   --paper:      #f1f2f5;
@@ -28,9 +26,9 @@
   --muted:      #626a78;
   --rule:       #d6dae1;
 
-  --c1: #2f5fd0;   /* cluster 1 */
-  --c2: #12867f;   /* cluster 2 */
-  --c3: #b8791a;   /* cluster 3 */
+  --c1: #2f5fd0;
+  --c2: #12867f;
+  --c3: #b8791a;
 
   --measure: 62ch;
   --rail: 232px;
@@ -71,7 +69,6 @@ body{
 
 a{ color:inherit; }
 
-/* ---------- utility type ---------- */
 .label{
   font-family:var(--f-mono);
   font-size:.6875rem;
@@ -94,7 +91,6 @@ a{ color:inherit; }
   align-items:start;
 }
 
-/* ---------- left rail ---------- */
 .rail{ position:sticky; top:clamp(2rem,6vw,4.5rem); }
 
 .rail-name{
@@ -133,7 +129,7 @@ a{ color:inherit; }
 .rail-meta a:hover{ border-bottom-color:var(--c1); color:var(--ink); }
 
 /* ============================================================
-   HERO — signature element
+   HERO
    ============================================================ */
 .hero{ margin-bottom:4.5rem; }
 
@@ -148,13 +144,11 @@ a{ color:inherit; }
   text-wrap:balance;
 }
 .hero-thesis em{
-  font-style:normal;
   font-family:var(--f-body);
   font-style:italic;
   color:var(--c1);
 }
 
-/* --- the drift strip --- */
 .drift{
   background:var(--surface);
   border:1px solid var(--rule);
@@ -207,13 +201,6 @@ a{ color:inherit; }
 .section p{ max-width:var(--measure); margin:0 0 1.05rem; }
 .section p:last-child{ margin-bottom:0; }
 
-h2.h{
-  font-family:var(--f-display);
-  font-size:1.0625rem;
-  font-weight:600;
-  letter-spacing:-.01em;
-  margin:0 0 .5rem;
-}
 h3.h3{
   font-family:var(--f-display);
   font-size:.9375rem;
@@ -224,15 +211,7 @@ h3.h3:first-of-type{ margin-top:0; }
 
 .lead{ font-size:1.125rem; }
 
-/* ---------- research strands ---------- */
-.strands{ display:grid; gap:1.5rem; margin-bottom:2.75rem; }
-.strand{ padding-left:1rem; border-left:2px solid var(--rule); }
-.strand:nth-child(1){ border-left-color:var(--c1); }
-.strand:nth-child(2){ border-left-color:var(--c2); }
-.strand:nth-child(3){ border-left-color:var(--c3); }
-.strand p{ margin:0; font-size:1rem; color:var(--muted); }
-
-/* ---------- lists (publications, talks, entries) ---------- */
+/* ---------- entry lists ---------- */
 .entries{ list-style:none; margin:0; padding:0; }
 .entries > li{ padding:1rem 0; border-top:1px solid var(--rule); }
 .entries > li:first-child{ border-top:none; padding-top:0; }
@@ -249,7 +228,7 @@ h3.h3:first-of-type{ margin-top:0; }
 
 .tag{
   font-family:var(--f-mono); font-size:.625rem; letter-spacing:.08em; text-transform:uppercase;
-  color:var(--c2); border:1px solid currentColor; border-radius:2px; padding:.1rem .35rem; margin-left:.4rem;
+  color:var(--c2); border:1px solid currentColor; border-radius:2px; padding:.1rem .35rem; margin-left:.5rem;
   white-space:nowrap;
 }
 
@@ -264,7 +243,7 @@ h3.h3:first-of-type{ margin-top:0; }
 .cv-download:hover, .cv-download:focus-visible{ background:var(--c1); }
 
 .timeline{ list-style:none; margin:0; padding:0; }
-.timeline > li{ display:grid; grid-template-columns:6.5rem minmax(0,1fr); gap:1rem; padding:.7rem 0; border-top:1px solid var(--rule); }
+.timeline > li{ display:grid; grid-template-columns:9.5rem minmax(0,1fr); gap:1rem; padding:.7rem 0; border-top:1px solid var(--rule); }
 .timeline > li:first-child{ border-top:none; }
 .timeline .yr{ font-family:var(--f-mono); font-size:.75rem; color:var(--muted); padding-top:.2rem; }
 .timeline .what{ font-size:1rem; }
@@ -277,7 +256,6 @@ h3.h3:first-of-type{ margin-top:0; }
 .contact-grid a{ text-decoration:none; border-bottom:1px solid var(--rule); }
 .contact-grid a:hover, .contact-grid a:focus-visible{ border-bottom-color:var(--c1); }
 
-/* ---------- footer ---------- */
 .colophon{
   border-top:1px solid var(--rule);
   padding-top:1.25rem;
@@ -287,7 +265,6 @@ h3.h3:first-of-type{ margin-top:0; }
   color:var(--muted);
 }
 
-/* ---------- focus + reveal ---------- */
 :focus-visible{ outline:2px solid var(--c1); outline-offset:3px; border-radius:2px; }
 
 .reveal{ opacity:0; transform:translateY(10px); transition:opacity .5s ease, transform .5s ease; }
@@ -317,7 +294,7 @@ h3.h3:first-of-type{ margin-top:0; }
   <!-- ==================== LEFT RAIL ==================== -->
   <header class="rail">
     <p class="rail-name">Jiaqi Zhu</p>
-    <p class="rail-role">PhD candidate, KNAW Humanities Cluster (DHLab) &amp; Radboud University</p>
+    <p class="rail-role">PhD candidate, DHLab, KNAW Humanities Cluster</p>
 
     <nav class="nav" aria-label="Sections">
       <a href="#about">About</a>
@@ -329,8 +306,8 @@ h3.h3:first-of-type{ margin-top:0; }
 
     <p class="rail-meta">
       Amsterdam, NL<br>
-      <a href="https://github.com/YOUR-USERNAME">GitHub</a> ·
-      <a href="https://orcid.org/0000-0000-0000-0000">ORCID</a>
+      <a href="https://github.com/jiaqiiiiii">GitHub</a> ·
+      <a href="https://orcid.org/0009-0005-2812-232X">ORCID</a>
     </p>
   </header>
 
@@ -347,8 +324,8 @@ h3.h3:first-of-type{ margin-top:0; }
           <span class="label">1840–1919</span>
         </div>
 
-        <!-- Replace the three numbers per row with your own cluster
-             distributions. They should sum to 100. -->
+        <!-- PLACEHOLDER NUMBERS. Replace each data-v with real cluster
+             proportions; the three values should sum to 100. -->
         <div class="drift-rows" id="drift">
           <div class="drift-row" data-v="58,34,8"><span class="drift-decade">1840s</span><div class="drift-track"></div></div>
           <div class="drift-row" data-v="52,38,10"><span class="drift-decade">1850s</span><div class="drift-track"></div></div>
@@ -378,9 +355,9 @@ h3.h3:first-of-type{ margin-top:0; }
 
       <p class="lead">I am a PhD candidate at the DHLab, KNAW Humanities Cluster, working on the TRIFECTA project under the supervision of Dr. Marieke van Erp.</p>
 
-      <p>I am interested in how language change may reflect social-cultural change. I work on diachronic semantic change detection.</p>
+      <p>I am interested in how language change may reflect social and cultural change. I work on diachronic semantic change detection.</p>
 
-      <p>Before the PhD, I obtained a MSc in Digital Humanities and a MA in Philosophy from KU Leuven. </p>
+      <p>Before the PhD, I obtained an MSc in Digital Humanities and an MA in Philosophy from KU Leuven.</p>
     </section>
 
     <!-- ---------- RESEARCH ---------- -->
@@ -391,24 +368,28 @@ h3.h3:first-of-type{ margin-top:0; }
       <ul class="entries">
         <li>
           <span class="entry-meta">Conference paper · 2025</span>
-          <span class="entry-title">Zhu, J., Paccosi, T., &amp; van Erp, M. <Tracing Colonial Discourse in Dutch Historical Newspapers></span>
+          <span class="entry-title">Zhu, J., Paccosi, T., &amp; van Erp, M. <em>Tracing Colonial Discourse in Dutch Historical Newspapers.</em></span>
           <span class="entry-venue">Computational Humanities Research (CHR) 2025</span>
-          <span class="entry-links">https://anthology.ach.org/volumes/vol0003/tracing-colonial-discourse/10.63744@SwkybkCCvmsj.pdf</span>
+          <span class="entry-links">
+            <a href="https://anthology.ach.org/volumes/vol0003/tracing-colonial-discourse/10.63744@SwkybkCCvmsj.pdf">PDF</a>
+          </span>
         </li>
         <li>
-          <span class="entry-meta">Conference paper · 2025<span class="tag">best poster</span></span>
-          <span class="entry-title">van Erp, M., Zhu, J., Provatorova, V. <Tracing Organisation Evolution in Wikidata></span>
+          <span class="entry-meta">Conference paper · 2025 <span class="tag">best poster</span></span>
+          <span class="entry-title">van Erp, M., Zhu, J., &amp; Provatorova, V. <em>Tracing Organisation Evolution in Wikidata.</em></span>
           <span class="entry-venue">The 5th Conference on Language, Data and Knowledge (LDK)</span>
-          <span class="entry-links">https://aclanthology.org/2025.ldk-1.9.pdf</span>
+          <span class="entry-links">
+            <a href="https://aclanthology.org/2025.ldk-1.9.pdf">PDF</a>
+          </span>
         </li>
-        </li>
-         <li>
-          <span class="entry-meta">Conference paper · 2025<span class="tag">best poster</span></span>
-          <span class="entry-title">Zamborlini, V., Zhu, J., van Erp, M., Betti, A. <Philosophising Lexical Meaning as an OntoLex-Lemon Extension></span>
+        <li>
+          <span class="entry-meta">Workshop paper · 2025</span>
+          <span class="entry-title">Zamborlini, V., Zhu, J., van Erp, M., &amp; Betti, A. <em>Philosophising Lexical Meaning as an OntoLex-Lemon Extension.</em></span>
           <span class="entry-venue">The 5th OntoLex Workshop</span>
-          <span class="entry-links">https://aclanthology.org/2025.ontolex-1.6.pdf</span>
+          <span class="entry-links">
+            <a href="https://aclanthology.org/2025.ontolex-1.6.pdf">PDF</a>
+          </span>
         </li>
-        <!-- Add further entries by copying one <li> block. -->
       </ul>
     </section>
 
@@ -425,30 +406,30 @@ h3.h3:first-of-type{ margin-top:0; }
         </li>
         <li>
           <span class="entry-meta">2025 · Leiden</span>
-          <span class="entry-title">The Hidden Voices in the Dutch East India Company data. A digital historiographical approach</span>
+          <span class="entry-title">The Hidden Voices in the Dutch East India Company Data: A Digital Historiographical Approach</span>
           <span class="entry-venue">European Social Science History Conference (ESSHC)</span>
         </li>
-         <li>
+        <li>
           <span class="entry-meta">2025 · Naples</span>
-          <span class="entry-title"><Tracing Organisation Evolution in Wikidata></span>
+          <span class="entry-title">Tracing Organisation Evolution in Wikidata</span>
           <span class="entry-venue">The 5th Conference on Language, Data and Knowledge (LDK)</span>
         </li>
         <li>
           <span class="entry-meta">2025 · Naples</span>
-          <span class="entry-title"><Philosophising Lexical Meaning as an OntoLex-Lemon Extension></span>
+          <span class="entry-title">Philosophising Lexical Meaning as an OntoLex-Lemon Extension</span>
           <span class="entry-venue">The 5th OntoLex Workshop</span>
         </li>
         <li>
           <span class="entry-meta">2024 · Leuven</span>
-          <span class="entry-title"><Smoke and Mirrors: Tracing the Influence of the Opium Trade in the Dutch East India Company through Letters and Cargo Logs></span>
+          <span class="entry-title">Smoke and Mirrors: Tracing the Influence of the Opium Trade in the Dutch East India Company through Letters and Cargo Logs</span>
           <span class="entry-venue">DH Benelux 2024</span>
         </li>
       </ul>
-       
+
       <h3 class="h3">Community &amp; service</h3>
       <ul class="entries">
         <li>
-          <span class="entry-meta">2025-2026</span>
+          <span class="entry-meta">2025–2026</span>
           <span class="entry-title">Cultural AI Reading Club</span>
           <span class="entry-venue">Session host — I host the monthly online reading and discussion session</span>
         </li>
@@ -464,27 +445,27 @@ h3.h3:first-of-type{ margin-top:0; }
 
       <ul class="timeline">
         <li>
-          <span class="yr">November 2023–</span>
+          <span class="yr">Nov 2023 –</span>
           <span class="what">PhD candidate, TRIFECTA project
-            <span class="where">KNAW Humanities Cluster (DHLab)</span>
+            <span class="where">DHLab, KNAW Humanities Cluster</span>
           </span>
         </li>
         <li>
-          <span class="yr"><September 2022-September 2023></span>
-          <span class="what">MSc <Master of Digital Humanities>
-            <span class="where"><KU Leuven></span>
-          </span>
-        </li>
-         <li>
-          <span class="yr"><September 2021-September 2022></span>
-          <span class="what">MA<Master of Philosophy>
-            <span class="where"><KU Leuven></span>
+          <span class="yr">2022 – 2023</span>
+          <span class="what">MSc, Digital Humanities
+            <span class="where">KU Leuven</span>
           </span>
         </li>
         <li>
-          <span class="yr"><September 2016-July 2020></span>
-          <span class="what">BA <Bachelor of Philosophy>
-            <span class="where"><Sichuan University></span>
+          <span class="yr">2021 – 2022</span>
+          <span class="what">MA, Philosophy
+            <span class="where">KU Leuven</span>
+          </span>
+        </li>
+        <li>
+          <span class="yr">2016 – 2020</span>
+          <span class="what">BA, Philosophy
+            <span class="where">Sichuan University</span>
           </span>
         </li>
       </ul>
@@ -499,15 +480,15 @@ h3.h3:first-of-type{ margin-top:0; }
       <dl class="contact-grid">
         <div>
           <dt>Email</dt>
-          <dd><a href="mailto:you@example.org">jiaqi.zhu@dh.huc.knaw.nl</a></dd>
+          <dd><a href="mailto:jiaqi.zhu@dh.huc.knaw.nl">jiaqi.zhu@dh.huc.knaw.nl</a></dd>
         </div>
         <div>
           <dt>GitHub</dt>
-          <dd><a href="https://github.com/YOUR-USERNAME">jiaqiiiiii</a></dd>
+          <dd><a href="https://github.com/jiaqiiiiii">jiaqiiiiii</a></dd>
         </div>
         <div>
           <dt>ORCID</dt>
-          <dd><a href="https://orcid.org/0000-0000-0000-0000">0009-0005-2812-232X</a></dd>
+          <dd><a href="https://orcid.org/0009-0005-2812-232X">0009-0005-2812-232X</a></dd>
         </div>
         <div>
           <dt>Based in</dt>
@@ -530,7 +511,6 @@ h3.h3:first-of-type{ margin-top:0; }
 (function () {
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---- build the drift strip from each row's data-v attribute ---- */
   var rows = document.querySelectorAll('#drift .drift-row');
   rows.forEach(function (row, i) {
     var parts = row.getAttribute('data-v').split(',').map(Number);
@@ -543,7 +523,6 @@ h3.h3:first-of-type{ margin-top:0; }
       track.appendChild(s);
       return { el: s, v: v };
     });
-    // paint on the next frame so the width transition actually runs
     requestAnimationFrame(function () {
       requestAnimationFrame(function () {
         segs.forEach(function (s) { s.el.style.width = s.v + '%'; });
@@ -551,7 +530,6 @@ h3.h3:first-of-type{ margin-top:0; }
     });
   });
 
-  /* ---- reveal sections on scroll ---- */
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
@@ -560,7 +538,6 @@ h3.h3:first-of-type{ margin-top:0; }
     }, { rootMargin: '0px 0px -12% 0px' });
     document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
 
-    /* ---- highlight the nav link for the section in view ---- */
     var links = {};
     document.querySelectorAll('.nav a').forEach(function (a) {
       links[a.getAttribute('href').slice(1)] = a;
